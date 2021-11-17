@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 
 const Greeting = ({ name, age, gender }) => {
-  const [counter, setCounter] = useState(0)
   const [info, setInfo] = useState("no info")
   const [loading, setLoading] = useState(false)
 
@@ -9,7 +8,7 @@ const Greeting = ({ name, age, gender }) => {
     <>
       <h1>Name: {name}</h1>
       <h1>Gender: {gender}</h1>
-      <h1>Info: {info}</h1>
+      <h1>age: {age}</h1>
       <input 
         type="text" 
         onChange={event => setInfo(event.target.value)}
